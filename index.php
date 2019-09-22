@@ -40,9 +40,7 @@
 
         // Get today's date and time
         var date = new Date()
-        var now = date.getTime();
-        var offset = date.getTimezoneOffset();
-        var now = now + offset* 60000;
+        var now = date.getUTCDate();
           
         // Find the distance between now and the count down date
         var distance = countDownDate - now - 5*3600000;
