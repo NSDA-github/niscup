@@ -40,11 +40,11 @@
 
         // Get today's date and time
         var date = new Date;
-var now = Date.UTC(date.getUTCFullYear(),date.getUTCMonth(), date.getUTCDate() , 
-date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.getUTCMilliseconds());
+        var date = new Date(date.toUTCString());
+        var now = date.getTime() + (date.getTimezoneOffset() * 60000)
           
         // Find the distance between now and the count down date
-        var distance = countDownDate - now - 0*3600000;
+        var distance = countDownDate - now - 5*3600000;
           
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
