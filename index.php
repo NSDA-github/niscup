@@ -33,7 +33,7 @@
     </div>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Sep 23, 2019 16:15:00 GMT+05:00").getTime();
+      var countDownDate = new Date("Sep 23, 2019 16:15:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -42,10 +42,10 @@
         var date = new Date()
         var now = date.getTime();
         var offset = date.getTimezoneOffset();
-        var now = now + offset;
+        var now = now + offset* 60000;
           
         // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+        var distance = countDownDate - now - 5*3600000;
           
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
