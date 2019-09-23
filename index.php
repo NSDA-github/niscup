@@ -79,7 +79,7 @@
     <div class="outerbody">
       <div class="cell"><button type="button" class="btn btn-light" onclick="redirect(\"https://challonge.com/niscupfifa\")">Перейти к таблице</button></div>
     </div>
-    <h2>ПОБЕДИТЕЛИ УЧЕНИКИ</h2>
+    <h2 class="blue">ПОБЕДИТЕЛИ УЧЕНИКИ</h2>
     <?php 
       $teachers = array(
         array("Вихорев Тимур", "Азангалиев Арнур")
@@ -182,7 +182,7 @@
         echo "</div>";
       }
     ?>
-    <h2>ПОБЕДИТЕЛИ ПЕРСОНАЛ</h2>
+    <h2 class="blue">ПОБЕДИТЕЛИ ПЕРСОНАЛ</h2>
     <?php 
       $teachers = array(
         array("Жардеков Асылбек", "Максотов Армат")
