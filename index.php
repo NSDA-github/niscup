@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -33,7 +33,7 @@
     </div>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Sep 23, 2019 16:15:00").getTime();
+      var countDownDate = new Date("Sep 23, 2019 12:40:00").getTime();
       var serverDate = <?= time() ?>;
       var now0 = new Date().getTime();
       var diff = now0 - serverDate*1000;
@@ -69,10 +69,16 @@
       <h2>МЕСТО ПРОВЕДЕНИЯ</h2>
       <h3>
         Холл перед кабинетом Роботехники, рядом со столовой. </br> 
-        <b>ПОСЛЕ 9-го УРОКА. </b> </br> </br> 
-        <i>Если участник отсутствует на матче более 3 минут, присуждается техническое поражение</i> </br> </br>
-        <i>Если оба участника отсутствуют, играется следующий матч, если таковых нет, оба исключаются по истечении 3 минут</i> 
+        <b>ПОСЛЕ 9-го УРОКА. </b> 
       </h3>
+      <div class="outerbody" style="margin: 15px 0 0 0;">
+        <div class="attention">
+          <h3>
+            <i>Если участник отсутствует на матче более 3 минут, присуждается техническое поражение</i> </br> </br>
+            <i>Если оба участника отсутствуют, играется следующий матч, если таковых нет, оба исключаются по истечении 3 минут</i> 
+          </h3>
+        </div>
+      </div>
     </div>
     <h2>ОНЛАЙН ТАБЛИЦА</h2>
     <div class="outerbody">
