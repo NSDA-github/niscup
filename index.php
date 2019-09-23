@@ -161,7 +161,7 @@
         array("Сарсенгалиев Акылбек", "Баймагамбетов Ансар"),
         array("Алибеков Кайсар", "Баянов Жангир"),
       );
-      echo "<h2 class=\"groupname\">Четверь финалисты нижней сетки</h2>";
+      echo "<h2 class=\"groupname\">Четвертьфиналисты нижней сетки</h2>";
       foreach($teachers as $index){
         echo "<div class=\"group\">";
         echo "<div class=\"half1\">";
