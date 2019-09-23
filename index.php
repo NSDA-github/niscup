@@ -33,7 +33,7 @@
     </div>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Sep 23, 2019 13:00:00").getTime();
+      var countDownDate = new Date("Sep 24, 2019 16:15:00").getTime();
       var serverDate = <?= time() ?>;
       var now0 = new Date().getTime();
       var diff = now0 - serverDate*1000;
@@ -59,234 +59,188 @@
         // If the count down is finished, write some text
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
+          document.getElementById("demo").innerHTML = "НАЧАЛОСЬ";
         }
       }, 1000);
     </script>
-    <h2> НАЧНЕТСЯ В ТЕЧЕНИИ </h2>
+    <h2> ДО НАЧАЛА <span class="gold">GRANDFINALS</span> </h2>
     <div class="countdown" id="demo"></div>
     <div class="body">
       <h2>МЕСТО ПРОВЕДЕНИЯ</h2>
-      <h3>
+      <h3 class="blue">
         Холл перед кабинетом Роботехники, рядом со столовой. 
       </h3>
-      <div class="outerbody" style="margin: 15px 0 0 0;">
-        <div class="attention">
-          <h3>
-            <i>Если участник отсутствует на матче более 3 минут, присуждается техническое поражение</i> </br> </br>
-            <i>Если оба участника отсутствуют, играется следующий матч, если таковых нет, оба исключаются по истечении 3 минут</i> 
-          </h3>
-        </div>
-      </div>
     </div>
-    <h2>ОНЛАЙН ТАБЛИЦА</h2>
+    <h2>ТАБЛИЦА ИГРЫ 22.09.19</h2>
     <div class="outerbody">
       <div class="cell"><button type="button" class="btn btn-light" onclick="redirect()">Перейти к таблице</button></div>
     </div>
-    <h2>СПИСОК УЧАСТНИКОВ</h2>
+    <h2>ПОБЕДИТЕЛИ УЧЕНИКИ</h2>
     <?php 
-        $teachers = array(
-            array("Ажгалиев Дидар", "Жапеков Ержан"),
-            array("Жардеков Асылбек", "Максотов Армат"),
-            array("Аюпов Темирлан", "Гайсин Ернар"),
-            array("Мунбаев Сакен", "Жанахметов Алтынбек"),
-        );
-        echo "<h2 class=\"groupname\">Персонал</h2>";
-        foreach($teachers as $index){
-            echo "<div class=\"group\">";
-            echo "<div class=\"half1\">";
-            echo "<h3>";
-            echo $index[0];
-            echo "</h3>";
-            echo "</div>";
-            echo "<div class=\"separation\"></div>";
-            echo "<div class=\"half2\">";
-            echo "<h3>";
-            echo $index[1];
-            echo "</h3>";
-            echo "</div>";
-            echo "</div>";
-        }
+      $teachers = array(
+        array("Вихорев Тимур", "Азангалиев Арнур")
+      );
+      echo "<h2 class=\"groupname\">Чемпион верхней сетки  - <i>grandfinalists</i></h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
 
-        $teachers = array(
-            array("Булатов Бекзат", "Муканов Арыстан"),
-            array("Вихорев Тимур", "Азангалиев Арнур")
-        );
-        echo "<h2 class=\"groupname\">12 класс</h2>";
-        foreach($teachers as $index){
-            echo "<div class=\"group\">";
-            echo "<div class=\"half1\">";
-            echo "<h3>";
-            echo $index[0];
-            echo "</h3>";
-            echo "</div>";
-            echo "<div class=\"separation\"></div>";
-            echo "<div class=\"half2\">";
-            echo "<h3>";
-            echo $index[1];
-            echo "</h3>";
-            echo "</div>";
-            echo "</div>";
-        }
+      $teachers = array(
+        array("Куанышкалиев Ахмет", "Оразғұл Арнұр"),
+      );
+      echo "<h2 class=\"groupname\">Чемпион нижней сетки - <i>grandfinalists</i></h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
 
-        $teachers = array(
-            array("Алибеков Кайсар", "Жангир Баянов"),
-            array("Карин Альнур", "Утегенов Азат")
-        );
-        echo "<h2 class=\"groupname\">11 класс</h2>";
-        foreach($teachers as $index){
-            echo "<div class=\"group\">";
-            echo "<div class=\"half1\">";
-            echo "<h3>";
-            echo $index[0];
-            echo "</h3>";
-            echo "</div>";
-            echo "<div class=\"separation\"></div>";
-            echo "<div class=\"half2\">";
-            echo "<h3>";
-            echo $index[1];
-            echo "</h3>";
-            echo "</div>";
-            echo "</div>";
-        }
+      $teachers = array(
+        array("Есенгалиев Арсен", "Жұмалиев Жангир"),
+      );
+      echo "<h2 class=\"groupname\">Второе место нижней сетки</h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
 
-        $teachers = array(
-            array("Имангали Мирас", "Асет Жумин"),
-            array("Сарсенгалиев Кадырбек", "Бектурган Ибрахим"),
-            array("Мусралимов Алим", "Шопликов Алишер"),
-            array("Слам Ералхан", "Абдигалиев Данабек"),
-            array("Рысбеков Берик", "Акылбекулы Ансар"),
-            array("Кеңесов Әли", "Мұқтар Әділет"),
-        );
-        echo "<h2 class=\"groupname\">10 класс</h2>";
-        foreach($teachers as $index){
-            echo "<div class=\"group\">";
-            echo "<div class=\"half1\">";
-            echo "<h3>";
-            echo $index[0];
-            echo "</h3>";
-            echo "</div>";
-            echo "<div class=\"separation\"></div>";
-            echo "<div class=\"half2\">";
-            echo "<h3>";
-            echo $index[1];
-            echo "</h3>";
-            echo "</div>";
-            echo "</div>";
-        }
+      $teachers = array(
+        array("Ихсан Сержан", "Мади Алтынбек"),
+      );
+      echo "<h2 class=\"groupname\">Полуфиналисты нижней сетки</h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
 
-        $teachers = array(
-            array("Сапаргали Елнур", "Бауыржан Нурторе"),
-            array("Исатай Дастан", "Максот Даниял"),
-            array("Токтасынов Аманжан", "Максотов Райынбек"),
-            array("Серик Санжар", "Тауфик Ерулан"),
-            array("Мірсейіт Арлан", "Нұрадин Медет"),
-            array("Асқаров Нұрсұлтан", "Бағдат Камиль"),
-            array("Габдуалиев Ернар", "Серик Мират"),
-        );
-        echo "<h2 class=\"groupname\">9 класс</h2>";
-        foreach($teachers as $index){
-            echo "<div class=\"group\">";
-            echo "<div class=\"half1\">";
-            echo "<h3>";
-            echo $index[0];
-            echo "</h3>";
-            echo "</div>";
-            echo "<div class=\"separation\"></div>";
-            echo "<div class=\"half2\">";
-            echo "<h3>";
-            echo $index[1];
-            echo "</h3>";
-            echo "</div>";
-            echo "</div>";
-        }
-
-        $teachers = array(
-            array("Есен Актлек", "Танатай Нурдаулет"),
-            array("Берденғали Бибарыс", "Айтбай Нұсұлтан"),
-            array("Павлов Роман", "Лукпанов Жан"),
-            array("Есенгалиев Арсен", "Жұмалиев Жангир"),
-        );
-        echo "<h2 class=\"groupname\">8 класс</h2>";
-        foreach($teachers as $index){
-            echo "<div class=\"group\">";
-            echo "<div class=\"half1\">";
-            echo "<h3>";
-            echo $index[0];
-            echo "</h3>";
-            echo "</div>";
-            echo "<div class=\"separation\"></div>";
-            echo "<div class=\"half2\">";
-            echo "<h3>";
-            echo $index[1];
-            echo "</h3>";
-            echo "</div>";
-            echo "</div>";
-        }
-
-        $teachers = array(
-            array("Нугманов Арсен", "Избасаров Азат"),
-            array("Мусин Бексултан", "Серик Ануар"),
-            array("Махмуд Адильжан", "Анвар Даниял"),
-            array("Умаров Адлет", "Галимулла Амир"),
-            array("Ихсан Сержан", "Мади Алтынбек"),
-            array("Дауенов Чингиз", "Сагимбаев Мансур"),
-            array("Есетов Жан", "Кунбулатов Арлан"),
-            array("Шамиш Мейрбек", "Бахтыгереев Алихан"),
-            array("Нургелдыулы Ерасыл", "Юсубалиев Рустам"),
-            array("Тлеу Ерұлан", "Тыныштық Дархан"),
-        );
-        echo "<h2 class=\"groupname\">7 класс</h2>";
-        foreach($teachers as $index){
-            echo "<div class=\"group\">";
-            echo "<div class=\"half1\">";
-            echo "<h3>";
-            echo $index[0];
-            echo "</h3>";
-            echo "</div>";
-            echo "<div class=\"separation\"></div>";
-            echo "<div class=\"half2\">";
-            echo "<h3>";
-            echo $index[1];
-            echo "</h3>";
-            echo "</div>";
-            echo "</div>";
-        }
+      $teachers = array(
+        array("Сарсенгалиев Акылбек", "Баймагамбетов Ансар"),
+        array("Алибеков Кайсар", "Баянов Жангир"),
+      );
+      echo "<h2 class=\"groupname\">Четверь финалисты нижней сетки</h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
+    ?>
+    <h2>ПОБЕДИТЕЛИ УЧЕТЕЛЯ</h2>
+    <?php 
+      $teachers = array(
+        array("Жардеков Асылбек", "Максотов Армат")
+      );
+      echo "<h2 class=\"groupname\">7 очков - <i>grandfinalists</i></h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
+      $teachers = array(
+        array("Гайсин Ернар", "Аюпов Темирлан")
+      );
+      echo "<h2 class=\"groupname\">6 очков - <i>grandfinalists</i></h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
+      $teachers = array(
+        array("Мунбаев Сакен", "Жанахметов Алтынбек")
+      );
+      echo "<h2 class=\"groupname\">4 очка</h2>";
+      foreach($teachers as $index){
+        echo "<div class=\"group\">";
+        echo "<div class=\"half1\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[0];
+        echo "</h3>";
+        echo "</div>";
+        echo "<div class=\"separation\"></div>";
+        echo "<div class=\"half2\">";
+        echo "<h3 class=\"italic\">";
+        echo $index[1];
+        echo "</h3>";
+        echo "</div>";
+        echo "</div>";
+      }
     ?>
     <div class="foot">
         <p>Made by Novel.Systems</p>
     </div>
-
-    <?php
-    session_start();
-    $counter_name = "counter.txt";
-
-    // Check if a text file exists.
-    // If not create one and initialize it to zero.
-    if (!file_exists($counter_name)) {
-        $f = fopen($counter_name, "w");
-        fwrite($f,"0");
-        fclose($f);
-    }
-
-    // Read the current value of our counter file
-    $f = fopen($counter_name,"r");
-    $counterVal = fread($f, filesize($counter_name));
-    fclose($f);
-
-    // Has visitor been counted in this session?
-    // If not, increase counter value by one
-    if(!isset($_SESSION['hasVisited'])){
-        $_SESSION['hasVisited']="yes";
-        $counterVal++;
-        $f = fopen($counter_name, "w");
-        fwrite($f, $counterVal);
-        fclose($f);
-    }
-    echo "<p>NoV: ";
-    echo $counterVal;
-    echo "</p>"
-    ?>
   </body>
 </html>
 
