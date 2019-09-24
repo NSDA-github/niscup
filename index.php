@@ -30,7 +30,7 @@
     </div>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Sep 24, 2019 16:15:00").getTime();
+      var countDownDate = new Date("Sep 24, 2019 16:25:00").getTime();
       var serverDate = <?= time() ?>;
       var now0 = new Date().getTime();
       var diff = now0 - serverDate*1000;
