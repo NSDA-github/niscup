@@ -17,12 +17,9 @@
   </head>
   <body>
       <script>
-          var visits = 0;
-            function redirect(linkto){
-                visits++;
-                console.log(visits);
-                window.location = linkto;
-            }
+        function redirect(linkto){
+          window.location = linkto;
+        }
       </script>
     <div class="outerhead">
       <div class="cell">
@@ -73,11 +70,11 @@
     </div>
     <h2>ТАБЛИЦА <i>GRANDFINALS</i></h2>
     <div class="outerbody">
-      <div class="cell"><button type="button" class="btn btn-light" onclick="redirect(\"https://challonge.com/niscupgrand\")">Перейти к таблице</button></div>
+      <div class="cell"><button type="button" class="btn btn-light" onclick="redirect('https://challonge.com/niscupgrand')">Перейти к таблице</button></div>
     </div>
     <h2>ТАБЛИЦА <i>КВАЛИФИКАЦИИ</i></h2>
     <div class="outerbody">
-      <div class="cell"><button type="button" class="btn btn-light" onclick="redirect(\"https://challonge.com/niscupfifa\")">Перейти к таблице</button></div>
+      <div class="cell"><button type="button" class="btn btn-light" onclick="redirect('https://challonge.com/niscupfifa')">Перейти к таблице</button></div>
     </div>
     <h2 class="blue">ПОБЕДИТЕЛИ УЧЕНИКИ</h2>
     <?php 
